@@ -10,7 +10,7 @@ function classNames(...classes) {
 }
 
 const Navbar = () => {
-  const { currentUser } = useAuthContext();
+  const { currentUser, logOut } = useAuthContext();
   const [showBackground, setShowBackground] = useState(false);
 
   useEffect(() => {
@@ -32,8 +32,8 @@ const Navbar = () => {
   }, []);
 
   //* with custom hook
-//   const { currentUser } = useAuthContext();
-//   const currentUser = { displayName: "felix franko" };
+  // const { currentUser } = useAuthContext();
+  //   const currentUser = { displayName: "felix franko" };
   // const currentUser = false;
 
   return (
